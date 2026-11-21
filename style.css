@@ -1,0 +1,173 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #FDF6F8;
+    color: #5C3758;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+header {
+    background-color: #D96C94;
+    color: white;
+    padding: 2.5rem 1.25rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+header p {
+    margin: 0.5rem 0 0 0;
+    color: white;
+    font-style: italic;
+    text-align: center;
+	
+}
+
+main {
+    max-width: 900px;
+    margin: 2.5rem auto;
+    padding: 0 1.25rem;
+}
+
+section {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background-color: #FFF9FB;
+    border: 1px solid #E7B7CA;
+    border-radius: 12px;
+}
+
+h2 {
+    font-family: 'Lexend Deca', sans-serif;
+    color: #A64D79;
+}
+
+h3 {
+    font-family: 'Lexend Deca', sans-serif;
+    color: #C25A86;
+}
+
+p {
+    text-align: justify;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #E7B7CA;
+    margin: 2rem 0;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    color: #5C3758;
+}
+
+a {
+    color: #A64D79;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #D96C94;
+}
+
+/* ABOUT ME */
+
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-photo {
+    flex-shrink: 0;
+}
+
+.about-photo img {
+    width: 220px;
+    height: auto;
+    border: 3px solid #D96C94;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+/* PASSION PROJECTS */
+
+.project-media {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.project-media img,
+.project-media video {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border: 2px solid #D96C94;
+    border-radius: 10px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-photo img {
+        width: 180px;
+        height: auto;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-text p {
+        text-align: left;
+    }
+
+    ul {
+        grid-template-columns: 1fr;
+    }
+
+    .project-media {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-media img,
+    .project-media video {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+}
